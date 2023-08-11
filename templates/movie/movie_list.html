@@ -1,0 +1,48 @@
+{% extends 'movie/base.html' %}
+{% block title %} {% endblock title %}
+{% block header %} bg1 {% endblock header %}
+{% block movie %}
+    <div class="left-ads-display col-lg-9">
+        <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+            {% for movie in movie_list %}
+                <div class="col-3 mb-5">
+                    <div class="">
+                        <div class="card mb-9">
+                            <img src="{{ movie.poster.url }}" class="img-fluid img-thumbnail" alt="">
+                        </div>
+                        <div>
+                            <h5 class="mt-3">
+                                <a href="{{ movie.get_absolute_url }}"
+                                   class="editContent">
+                                   <span class="money editContent">{{ movie.title }}</span>
+                                </a>
+                            </h5>
+
+                            <ul class="stars">
+                                <li><a href="#"><span class="fa fa-star"
+                                                      aria-hidden="true"></span></a>
+                                </li>
+                                <li><a href="#"><span class="fa fa-star"
+                                                      aria-hidden="true"></span></a>
+                                </li>
+                                <li><a href="#"><span class="fa fa-star-half-o"
+                                                      aria-hidden="true"></span></a>
+                                </li>
+                                <li><a href="#"><span class="fa fa-star-half-o"
+                                                      aria-hidden="true"></span></a>
+                                </li>
+                                <li><a href="#"><span class="fa fa-star-o"
+                                                      aria-hidden="true"></span></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+        <div class="grid-img-right mt-4 text-right bg bg1" >
+            {% include 'include/pagination.html' %}
+        </div>
+    </div>
+    
+{% endblock movie %}

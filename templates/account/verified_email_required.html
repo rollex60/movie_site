@@ -1,0 +1,23 @@
+{% extends "account/base.html" %}
+
+{% load i18n %}
+
+{% block head_title %}{% trans "Verifique seu endereço de e-mail" %}{% endblock %}
+
+{% block content %}
+<h1>{% trans "Verifique seu endereço de e-mail" %}</h1>
+
+{% url 'account_email' as email_url %}
+
+<p>{% blocktrans %}Esta parte do site exige que verifiquemos se
+    você é quem diz ser. Para tanto, solicitamos que você
+    verifique a propriedade do seu endereço de e-mail. {% endblocktrans %}</p>
+
+<p>{% blocktrans %}Enviamos um e-mail para você para
+    verificação. Por favor, clique no link dentro deste e-mail. Por favor
+    entre em contato conosco se você não o receber dentro de alguns minutos.{% endblocktrans %}</p>
+
+<p>{% blocktrans %}<strong>Observação:</strong> você ainda pode <a href="{{ email_url }}">mudar o seu endereço de email</a>.{% endblocktrans %}</p>
+
+
+{% endblock %}

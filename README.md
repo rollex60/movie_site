@@ -9,3 +9,7 @@ Movie site with categories, genres and years of movies with translation into two
 ## Page Movie Site ##
 
 ![Alt text](https://bitbucket.org/django-4/movie_site/raw/56df6bdcf12ac1001508e4c774f61ebe2e0f914f/media/movie-site1.png)
+
+## Admin Movie Site ##
+
+![Alt text](https://bitbucket.org/django-4/movie_site/raw/afc0f36468cd55201d22f4398bb4376732e1f76a/media/music_shop_admin.png)

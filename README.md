@@ -1,29 +1,13 @@
 # README #
 
-This README would normally document whatever steps are necessary to get your application up and running.
+## Movie site. ##
 
-### What is this repository for? ###
+Music shop have images performers with titles the performers and titles albums. Price to albom with genre, carrier and relise date
 
-* Quick summary
-* Version
-* [Learn Markdown](https://bitbucket.org/tutorials/markdowndemo)
+![Alt text](https://bitbucket.org/django-4/movie_site/raw/56df6bdcf12ac1001508e4c774f61ebe2e0f914f/media/movie-site.png)
 
-### How do I get set up? ###
+## Shopping cart ##
 
-* Summary of set up
-* Configuration
-* Dependencies
-* Database configuration
-* How to run tests
-* Deployment instructions
+With image, price and quantity
 
-### Contribution guidelines ###
-
-* Writing tests
-* Code review
-* Other guidelines
-
-### Who do I talk to? ###
-
-* Repo owner or admin
-* Other community or team contact
+![Alt text](https://bitbucket.org/django-4/movie_site/raw/56df6bdcf12ac1001508e4c774f61ebe2e0f914f/media/movie-site1.png)

@@ -22,16 +22,16 @@
                 </h3>
                 <h5 class="editContent"></h5>
                 <ul>
-                    <li>
+                    <li style="list-style: none">
                         <span><b>{% trans 'Idade' %}:</b> {{ actor.age }} {% trans 'anos' %}</span></li>
-                    <li>
+                    <li style="list-style: none">
                         <span><b>{% trans 'Diretor' %}:</b>
                             {% for movie in actor.film_director.all %}
                                 {{ movie.title }}
                             {% endfor %}
                         </span>
                     </li>
-                    <li><span><b>{% trans 'Ator' %}:</b>
+                    <li style="list-style: none"><span><b>{% trans 'Ator' %}:</b>
                         {% for movie in actor.film_actor.all %}
                             {{ movie.title }}
                         {% endfor %}
@@ -42,7 +42,7 @@
         </div>
         <div class="row sub-para-w3layouts mt-5">
             <h3 class="shop-sing editContent">
-                О {{ actor.name }}
+                About {{ actor.name }}
             </h3>
             <p class="editContent">
                 {{ actor.description|safe }}
